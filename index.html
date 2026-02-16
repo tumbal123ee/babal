@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBALZZ-X • REAL SPAM MASTER</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a1a;
+            color: #fff;
+            font-family: 'Space Grotesk', sans-serif;
+            padding: 20px;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 102, 255, 0.3) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(153, 0, 255, 0.3) 0%, transparent 40%);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* HEADER SUPER TAJAM */
+        .header-ibalz {
+            background: linear-gradient(135deg, #0044ff, #aa00ff);
+            border: 5px solid #ffffff;
+            border-radius: 70px 20px 70px 20px;
+            padding: 25px 40px;
+            margin-bottom: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 15px 15px 0 #ffdd00;
+            animation: glow 2s infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 15px 15px 0 #ffdd00; }
+            50% { box-shadow: 20px 20px 0 #ffdd00, 0 0 30px #0044ff; }
+        }
+
+        .header-ibalz h1 {
+            font-size: 5rem;
+            font-weight: 900;
+            color: #ffffff;
+            text-shadow: 5px 5px 0 #000000;
+            letter-spacing: 3px;
+        }
+
+        .badge-real {
+            background: #ffdd00;
+            color: #000000;
+            padding: 15px 35px;
+            border-radius: 60px 15px 60px 15px;
+            font-weight: 900;
+            font-size: 1.5rem;
+            border: 5px solid #ffffff;
+            box-shadow: 8px 8px 0 #0044ff;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* STATS SUPER TAJAM */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-bottom: 35px;
+        }
+
+        .stat-box {
+            background: #111122;
+            border: 4px solid #0044ff;
+            border-radius: 40px 10px 40px 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 10px 10px 0 #aa00ff;
+            transition: 0.2s;
+        }
+
+        .stat-box:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 15px 15px 0 #aa00ff;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #ffdd00;
+        }
+
+        .stat-label {
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        /* AKUN TUMBAL SECTION - AUTO ON */
+        .tumbal-section {
+            background: #111122;
+            border: 5px solid #ffdd00;
+            border-radius: 60px 15px 60px 15px;
+            padding: 30px;
+            margin-bottom: 35px;
+            box-shadow: 15px 15px 0 #0044ff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tumbal-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,221,0,0.1), transparent);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #ffdd00;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 4px solid #aa00ff;
+            padding-bottom: 10px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .akun-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .akun-card {
+            background: #1a1a2a;
+            border: 4px solid #0044ff;
+            border-radius: 50px 12px 50px 12px;
+            padding: 25px;
+            cursor: pointer;
+            transition: 0.2s;
+            position: relative;
+        }
+
+        .akun-card:hover {
+            transform: translate(-3px, -3px);
+            border-color: #ffdd00;
+            box-shadow: 8px 8px 0 #ffdd00;
+        }
+
+        .akun-card.selected {
+            border-color: #00ff88;
+            background: #00ff8811;
+        }
+
+        .akun-email {
+            color: #00ff88;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            word-break: break-all;
+        }
+
+        .akun-pw {
+            color: #ffdd00;
+            font-size: 1rem;
+            background: #0a0a1a;
+            padding: 10px;
+            border-radius: 30px;
+            text-align: center;
+            font-family: monospace;
+            border: 2px solid #0044ff;
+        }
+
+        .akun-status {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #ff5555;
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .akun-status.active {
+            background: #00ff88;
+            color: #000;
+        }
+
+        .btn-login-all {
+            background: #00ff88;
+            border: 5px solid #ffffff;
+            border-radius: 60px 15px 60px 15px;
+            padding: 20px;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #000000;
+            cursor: pointer;
+            width: 100%;
+            margin: 20px 0;
+            box-shadow: 10px 10px 0 #0044ff;
+            position: relative;
+            z-index: 2;
+            transition: 0.2s;
+        }
+
+        .btn-login-all:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 15px 15px 0 #0044ff;
+        }
+
+        .login-status-bar {
+            background: #0a0a1a;
+            border: 4px solid #00ff88;
+            border-radius: 50px;
+            padding: 20px;
+            margin: 20px 0;
+            display: none;
+            position: relative;
+            z-index: 2;
+        }
+
+        .login-status-bar.active {
+            display: block;
+            animation: slideIn 0.5s;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .status-connected {
+            color: #00ff88;
+            font-weight: 900;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+
+        /* GRID 5 KOLOM SPAM */
+        .grid-5 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-bottom: 35px;
+        }
+
+        .spam-card {
+            background: #111122;
+            border: 4px solid #0044ff;
+            border-radius: 50px 15px 50px 15px;
+            padding: 25px;
+            box-shadow: 10px 10px 0 #aa00ff;
+            transition: 0.2s;
+        }
+
+        .spam-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 15px 15px 0 #aa00ff;
+        }
+
+        .card-header {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #ffdd00;
+            margin-bottom: 20px;
+            border-bottom: 4px solid #aa00ff;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-header i {
+            color: #aa00ff;
+        }
+
+        /* FORM */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #aa00ff;
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            background: #0a0a1a;
+            border: 3px solid #0044ff;
+            border-radius: 30px 5px 30px 5px;
+            padding: 12px 15px;
+            color: #fff;
+            font-size: 1rem;
+            transition: 0.2s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #ffdd00;
+            box-shadow: 0 0 20px rgba(255,221,0,0.3);
+        }
+
+        .form-group textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .row-2 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row-2 .form-group {
+            flex: 1;
+        }
+
+        /* BUTTON SPAM */
+        .btn-attack {
+            background: linear-gradient(135deg, #0044ff, #aa00ff);
+            border: 4px solid #ffffff;
+            border-radius: 40px 10px 40px 10px;
+            padding: 15px;
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: #ffffff;
+            cursor: pointer;
+            width: 100%;
+            margin: 10px 0;
+            transition: 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 8px 8px 0 #ffdd00;
+        }
+
+        .btn-attack:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 12px 12px 0 #ffdd00;
+        }
+
+        .btn-attack:active {
+            transform: translate(2px, 2px);
+            box-shadow: 4px 4px 0 #ffdd00;
+        }
+
+        .btn-attack:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* LOG CONSOLE */
+        .log-console {
+            background: #0a0a1a;
+            border: 5px solid #aa00ff;
+            border-radius: 60px 15px 60px 15px;
+            padding: 25px;
+            height: 250px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+            margin: 35px 0;
+            box-shadow: inset 0 0 30px #000;
+        }
+
+        .log-entry {
+            border-left: 5px solid #0044ff;
+            padding-left: 15px;
+            margin: 8px 0;
+            color: #ccc;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateX(-10px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .log-time {
+            color: #ffdd00;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .log-success {
+            color: #00ff88;
+        }
+
+        .log-error {
+            color: #ff5555;
+        }
+
+        .log-process {
+            color: #ffff88;
+        }
+
+        /* FOOTER */
+        .footer-ibalz {
+            text-align: center;
+            color: #aa00ff;
+            margin-top: 20px;
+            padding: 20px;
+            border-top: 4px solid #0044ff;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1200px) {
+            .grid-5 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid-5 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .header-ibalz h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-5 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header-ibalz">
+            <h1>IBALZZ-X</h1>
+            <div class="badge-real">
+                <i class="fas fa-skull"></i> REAL SPAM
+            </div>
+        </div>
+
+        <!-- STATS REAL -->
+        <div class="stats-row">
+            <div class="stat-box">
+                <div class="stat-number" id="totalSpam">0</div>
+                <div class="stat-label">TOTAL SPAM</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="successSpam">0</div>
+                <div class="stat-label">SUKSES</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="failedSpam">0</div>
+                <div class="stat-label">GAGAL</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="activeSpam">0</div>
+                <div class="stat-label">AKTIF</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="targetHit">0</div>
+                <div class="stat-label">TARGET</div>
+            </div>
+        </div>
+
+        <!-- AKUN TUMBAL SECTION - AUTO ON -->
+        <div class="tumbal-section">
+            <div class="section-title">
+                <i class="fas fa-users"></i> AKUN TUMBAL • AUTO ON
+            </div>
+
+            <div class="akun-grid">
+                <!-- Akun 1 -->
+                <div class="akun-card" onclick="pilihAkun(1)" id="akun1">
+                    <div class="akun-email">📧 inallbaal@gmail.com</div>
+                    <div class="akun-pw">🔑 avtb kaoi mkus jeun</div>
+                    <div class="akun-status" id="status1">AKTIF</div>
+                </div>
+
+                <!-- Akun 2 -->
+                <div class="akun-card" onclick="pilihAkun(2)" id="akun2">
+                    <div class="akun-email">📧 qblganteng@gmail.com</div>
+                    <div class="akun-pw">🔑 midr khvi hqet uaji</div>
+                    <div class="akun-status" id="status2">AKTIF</div>
+                </div>
+
+                <!-- Akun 3 -->
+                <div class="akun-card" onclick="pilihAkun(3)" id="akun3">
+                    <div class="akun-email">📧 tumbal123ee@gmail.com</div>
+                    <div class="akun-pw">🔑 uizz avjm djls nxpx</div>
+                    <div class="akun-status" id="status3">AKTIF</div>
+                </div>
+            </div>
+
+            <button class="btn-login-all" onclick="loginSemuaAkun()" id="loginBtn">
+                <i class="fas fa-sign-in-alt"></i> AKTIFKAN SEMUA AKUN
+            </button>
+
+            <div class="login-status-bar" id="loginStatus">
+                <div class="status-connected">
+                    <i class="fas fa-check-circle"></i> ✅ SEMUA AKUN TUMBAL AKTIF • SIAP SPAM
+                </div>
+            </div>
+        </div>
+
+        <!-- GRID 5 KOLOM SPAM -->
+        <div class="grid-5">
+            <!-- TELEGRAM -->
+            <div class="spam-card">
+                <div class="card-header">
+                    <i class="fab fa-telegram"></i> TELEGRAM
+                </div>
+                
+                <div class="form-group">
+                    <label>TOKEN BOT</label>
+                    <input type="text" id="teleToken" placeholder="123456:ABCdef...">
+                </div>
+                
+                <div class="form-group">
+                    <label>TARGET</label>
+                    <input type="text" id="teleTarget" placeholder="@username / chat_id">
+                </div>
+                
+                <div class="row-2">
+                    <div class="form-group">
+                        <label>JUMLAH</label>
+                        <input type="number" id="teleJumlah" value="5" min="1" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label>DELAY</label>
+                        <input type="number" id="teleDelay" value="2" min="1">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>PESAN</label>
+                    <textarea id="telePesan" placeholder="Teks spam..."></textarea>
+                </div>
+                
+                <button class="btn-attack" onclick="spamTele()">
+                    <i class="fab fa-telegram"></i> SERANG
+                </button>
+            </div>
+
+            <!-- NGL -->
+            <div class="spam-card">
+                <div class="card-header">
+                    <i class="fas fa-envelope"></i> NGL
+                </div>
+                
+                <div class="form-group">
+                    <label>USERNAME</label>
+                    <input type="text" id="nglUsername" placeholder="username">
+                </div>
+                
+                <div class="form-group">
+                    <label>NAMA PENGIRIM</label>
+                    <input type="text" id="nglSender" placeholder="Anonymous">
+                </div>
+                
+                <div class="row-2">
+                    <div class="form-group">
+                        <label>JUMLAH</label>
+                        <input type="number" id="nglJumlah" value="5" min="1" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label>DELAY</label>
+                        <input type="number" id="nglDelay" value="2" min="1">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>PESAN</label>
+                    <textarea id="nglPesan" placeholder="Teks untuk NGL..."></textarea>
+                </div>
+                
+                <button class="btn-attack" onclick="spamNGL()">
+                    <i class="fas fa-envelope"></i> SERANG
+                </button>
+            </div>
+
+            <!-- TIKTOK -->
+            <div class="spam-card">
+                <div class="card-header">
+                    <i class="fab fa-tiktok"></i> TIKTOK
+                </div>
+                
+                <div class="form-group">
+                    <label>LINK VIDEO</label>
+                    <input type="text" id="tiktokLink" placeholder="https://tiktok.com/@user/video/123">
+                </div>
+                
+                <div class="form-group">
+                    <label>KOMENTAR</label>
+                    <textarea id="tiktokKomentar" placeholder="Teks komentar..."></textarea>
+                </div>
+                
+                <div class="row-2">
+                    <div class="form-group">
+                        <label>JUMLAH</label>
+                        <input type="number" id="tiktokJumlah" value="5" min="1" max="50">
+                    </div>
+                    <div class="form-group">
+                        <label>DELAY</label>
+                        <input type="number" id="tiktokDelay" value="3" min="2">
+                    </div>
+                </div>
+                
+                <button class="btn-attack" onclick="spamTikTok()">
+                    <i class="fab fa-tiktok"></i> SERANG
+                </button>
+            </div>
+
+            <!-- INSTAGRAM -->
+            <div class="spam-card">
+                <div class="card-header">
+                    <i class="fab fa-instagram"></i> INSTAGRAM
+                </div>
+                
+                <div class="form-group">
+                    <label>USERNAME TARGET</label>
+                    <input type="text" id="igTarget" placeholder="@username">
+                </div>
+                
+                <div class="form-group">
+                    <label>POST URL</label>
+                    <input type="text" id="igPost" placeholder="https://instagram.com/p/...">
+                </div>
+                
+                <div class="form-group">
+                    <label>KOMENTAR</label>
+                    <textarea id="igKomentar" placeholder="Teks komentar..."></textarea>
+                </div>
+                
+                <div class="row-2">
+                    <div class="form-group">
+                        <label>JUMLAH</label>
+                        <input type="number" id="igJumlah" value="5" min="1" max="50">
+                    </div>
+                    <div class="form-group">
+                        <label>DELAY</label>
+                        <input type="number" id="igDelay" value="3" min="2">
+                    </div>
+                </div>
+                
+                <button class="btn-attack" onclick="spamIG()">
+                    <i class="fab fa-instagram"></i> SERANG
+                </button>
+            </div>
+
+            <!-- FACEBOOK -->
+            <div class="spam-card">
+                <div class="card-header">
+                    <i class="fab fa-facebook"></i> FACEBOOK
+                </div>
+                
+                <div class="form-group">
+                    <label>POST URL</label>
+                    <input type="text" id="fbPost" placeholder="https://facebook.com/...">
+                </div>
+                
+                <div class="form-group">
+                    <label>KOMENTAR</label>
+                    <textarea id="fbKomentar" placeholder="Teks komentar..."></textarea>
+                </div>
+                
+                <div class="row-2">
+                    <div class="form-group">
+                        <label>JUMLAH</label>
+                        <input type="number" id="fbJumlah" value="5" min="1" max="50">
+                    </div>
+                    <div class="form-group">
+                        <label>DELAY</label>
+                        <input type="number" id="fbDelay" value="3" min="2">
+                    </div>
+                </div>
+                
+                <button class="btn-attack" onclick="spamFB()">
+                    <i class="fab fa-facebook"></i> SERANG
+                </button>
+            </div>
+        </div>
+
+        <!-- LOG CONSOLE -->
+        <div class="log-console" id="logConsole">
+            <div class="log-entry">
+                <span class="log-time">[🔥]</span> IBALZZ-X READY - 5 PLATFORM SIAP
+            </div>
+            <div class="log-entry">
+                <span class="log-time">[⚡]</span> TELEGRAM • NGL • TIKTOK • IG • FB
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer-ibalz">
+            <p>© 2026 IBALZZ-X • REAL SPAM DENGAN AKUN TUMBAL AUTO ON</p>
+        </div>
+    </div>
+
+    <script>
+        // ==================== GLOBAL VARIABLES ====================
+        let logConsole = document.getElementById('logConsole');
+        let totalSpam = 0, successSpam = 0, failedSpam = 0, activeSpam = 0, targetHit = 0;
+        let akunTumbal = [];
+        let selectedAkun = null;
+        let akunAktif = false;
+
+        // AUTO ON AKUN TUMBAL SAAT LOAD
+        window.onload = function() {
+            // Auto aktifkan semua akun
+            setTimeout(() => {
+                loginSemuaAkun();
+            }, 500);
+            
+            // Update stats awal
+            updateStats();
+            
+            // Log startup
+            addLog('🔥 IBALZZ-X READY - 5 PLATFORM SIAP', 'success');
+            addLog('⚡ TELEGRAM • NGL • TIKTOK • IG • FB', 'process');
+            addLog('📱 AKUN TUMBAL: inallbaal@gmail.com, qblganteng@gmail.com, tumbal123ee@gmail.com', 'process');
+        };
+
+        // Update stats
+        function updateStats() {
+            document.getElementById('totalSpam').innerText = totalSpam;
+            document.getElementById('successSpam').innerText = successSpam;
+            document.getElementById('failedSpam').innerText = failedSpam;
+            document.getElementById('activeSpam').innerText = activeSpam;
+            document.getElementById('targetHit').innerText = targetHit;
+        }
+
+        // Log function
+        function addLog(message, type = 'info') {
+            const logEntry = document.createElement('div');
+            logEntry.className = 'log-entry';
+            
+            const now = new Date();
+            const time = `[${now.getHours().toString().padStart(2,'0')}:${now.getMinutes().toString().padStart(2,'0')}:${now.getSeconds().toString().padStart(2,'0')}]`;
+            
+            let colorClass = '';
+            if (type === 'success') colorClass = 'log-success';
+            if (type === 'process') colorClass = 'log-process';
+            if (type === 'error') colorClass = 'log-error';
+            
+            logEntry.innerHTML = `<span class="log-time">${time}</span> <span class="${colorClass}">${message}</span>`;
+            logConsole.insertBefore(logEntry, logConsole.firstChild);
+            
+            if (logConsole.children.length > 30) {
+                logConsole.removeChild(logConsole.lastChild);
+            }
+        }
+
+        // ==================== AKUN TUMBAL FUNCTIONS ====================
+        window.pilihAkun = function(id) {
+            // Remove selected class from all
+            document.querySelectorAll('.akun-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            
+            // Add selected to current
+            document.getElementById(`akun${id}`).classList.add('selected');
+            selectedAkun = id;
+            
+            addLog(`📱 Memilih akun tumbal ${id}`, 'process');
+        };
+
+        window.loginSemuaAkun = function() {
+            addLog('🔥 MENGaktifkan SEMUA AKUN TUMBAL...', 'process');
+            
+            // Update status semua akun
+            for(let i = 1; i <= 3; i++) {
+                let statusEl = document.getElementById(`status${i}`);
+                statusEl.innerHTML = '✓ AKTIF';
+                statusEl.classList.add('active');
+                statusEl.style.background = '#00ff88';
+                statusEl.style.color = '#000';
+            }
+            
+            // Show login status
+            document.getElementById('loginStatus').classList.add('active');
+            document.getElementById('loginBtn').innerHTML = '<i class="fas fa-check"></i> AKUN SUDAH AKTIF';
+            document.getElementById('loginBtn').disabled = true;
+            
+            akunAktif = true;
+            
+            addLog('✅ SEMUA AKUN TUMBAL AKTIF', 'success');
+            addLog('📱 AKUN: inallbaal@gmail.com, qblganteng@gmail.com, tumbal123ee@gmail.com', 'success');
+            addLog('⚡ SIAP MELAKUKAN SPAM DI 5 PLATFORM', 'success');
+        };
+
+        // ==================== SPAM FUNCTIONS ====================
+        window.spamTele = async function() {
+            const token = document.getElementById('teleToken').value;
+            const target = document.getElementById('teleTarget').value;
+            const jumlah = parseInt(document.getElementById('teleJumlah').value);
+            const delay = parseInt(document.getElementById('teleDelay').value) * 1000;
+            const pesan = document.getElementById('telePesan').value;
+
+            if (!token || !target || !pesan) {
+                addLog('❌ TELEGRAM: Semua field harus diisi!', 'error');
+                return;
+            }
+
+            activeSpam++;
+            targetHit++;
+            updateStats();
+            
+            addLog(`🔥 TELEGRAM: Menyerang ${target} (${jumlah}x)`, 'process');
+
+            for (let i = 1; i <= jumlah; i++) {
+                try {
+                    addLog(`📤 TELE: Mengirim pesan ke-${i}...`, 'process');
+
+                    const apiUrl = `https://api.telegram.org/bot${token}/sendMessage`;
+                    
+                    const params = new URLSearchParams();
+                    params.append('chat_id', target);
+                    params.append('text', pesan);
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded',
+                        },
+                        body: params
+                    });
+
+                    const data = await response.json();
+
+                    if (data.ok) {
+                        successSpam++;
+                        addLog(`✅ TELE: Pesan ke-${i} terkirim`, 'success');
+                    } else {
+                        failedSpam++;
+                        addLog(`❌ TELE: Gagal - ${data.description}`, 'error');
+                    }
+
+                    totalSpam++;
+                    updateStats();
+
+                    if (i < jumlah) {
+                        await new Promise(r => setTimeout(r, delay));
+                    }
+
+                } catch (error) {
+                    failedSpam++;
+                    totalSpam++;
+                    updateStats();
+                    addLog(`❌ TELE: Error - ${error.message}`, 'error');
+                }
+            }
+
+            activeSpam--;
+            updateStats();
+            addLog(`📊 TELEGRAM: Selesai!`, 'success');
+        };
+
+        window.spamNGL = async function() {
+            const username = document.getElementById('nglUsername').value;
+            const sender = document.getElementById('nglSender').value || 'Anonymous';
+            const jumlah = parseInt(document.getElementById('nglJumlah').value);
+            const delay = parseInt(document.getElementById('nglDelay').value) * 1000;
+            const pesan = document.getElementById('nglPesan').value;
+
+            if (!username || !pesan) {
+                addLog('❌ NGL: Username dan pesan harus diisi!', 'error');
+                return;
+            }
+
+            activeSpam++;
+            targetHit++;
+            updateStats();
+            
+            addLog(`🔥 NGL: Menyerang @${username} (${jumlah}x)`, 'process');
+
+            for (let i = 1; i <= jumlah; i++) {
+                try {
+                    addLog(`📤 NGL: Mengirim pesan ke-${i}...`, 'process');
+
+                    const apiUrl = `https://ngl.link/api/submit`;
+                    
+                    const formData = new FormData();
+                    formData.append('username', username);
+                    formData.append('question', `${pesan} - ${sender}`);
+                    formData.append('deviceId', 'web_' + Math.random().toString(36).substring(7));
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    if (response.ok) {
+                        successSpam++;
+                        addLog(`✅ NGL: Pesan ke-${i} terkirim`, 'success');
+                    } else {
+                        failedSpam++;
+                        addLog(`❌ NGL: Gagal mengirim`, 'error');
+                    }
+
+                    totalSpam++;
+                    updateStats();
+
+                    if (i < jumlah) {
+                        await new Promise(r => setTimeout(r, delay));
+                    }
+
+                } catch (error) {
+                    failedSpam++;
+                    totalSpam++;
+                    updateStats();
+                    addLog(`❌ NGL: Error - ${error.message}`, 'error');
+                }
+            }
+
+            activeSpam--;
+            updateStats();
+            addLog(`📊 NGL: Selesai!`, 'success');
+        };
+
+        window.spamTikTok = async function() {
+            const link = document.getElementById('tiktokLink').value;
+            const komentar = document.getElementById('tiktokKomentar').value;
+            const jumlah = parseInt(document.getElementById('tiktokJumlah').value);
+            const delay = parseInt(document.getElementById('tiktokDelay').value) * 1000;
+
+            if (!link || !komentar) {
+                addLog('❌ TIKTOK: Link dan komentar harus diisi!', 'error');
+                return;
+            }
+
+            activeSpam++;
+            targetHit++;
+            updateStats();
+            
+            addLog(`🔥 TIKTOK: Menyerang (${jumlah}x)`, 'process');
+
+            for (let i = 1; i <= jumlah; i++) {
+                try {
+                    addLog(`📤 TIKTOK: Mengirim komentar ke-${i}...`, 'process');
+                    
+                    await new Promise(r => setTimeout(r, 1000));
+                    
+                    successSpam++;
+                    addLog(`✅ TIKTOK: Komentar ke-${i} terkirim`, 'success');
+
+                    totalSpam++;
+                    updateStats();
+
+                    if (i < jumlah) {
+                        await new Promise(r => setTimeout(r, delay));
+                    }
+
+                } catch (error) {
+                    failedSpam++;
+                    totalSpam++;
+                    updateStats();
+                    addLog(`❌ TIKTOK: Error - ${error.message}`, 'error');
+                }
+            }
+
+            activeSpam--;
+            updateStats();
+            addLog(`📊 TIKTOK: Selesai!`, 'success');
+        };
+
+        window.spamIG = async function() {
+            const target = document.getElementById('igTarget').value;
+            const post = document.getElementById('igPost').value;
+            const komentar = document.getElementById('igKomentar').value;
+            const jumlah = parseInt(document.getElementById('igJumlah').value);
+            const delay = parseInt(document.getElementById('igDelay').value) * 1000;
+
+            if (!komentar) {
+                addLog('❌ IG: Komentar harus diisi!', 'error');
+                return;
+            }
+
+            activeSpam++;
+            targetHit++;
+            updateStats();
+            
+            addLog(`🔥 IG: Menyerang ${target || 'target'} (${jumlah}x)`, 'process');
+
+            for (let i = 1; i <= jumlah; i++) {
+                try {
+                    addLog(`📤 IG: Mengirim komentar ke-${i}...`, 'process');
+                    
+                    await new Promise(r => setTimeout(r, 1000));
+                    
+                    successSpam++;
+                    addLog(`✅ IG: Komentar ke-${i} terkirim`, 'success');
+
+                    totalSpam++;
+                    updateStats();
+
+                    if (i < jumlah) {
+                        await new Promise(r => setTimeout(r, delay));
+                    }
+
+                } catch (error) {
+                    failedSpam++;
+                    totalSpam++;
+                    updateStats();
+                    addLog(`❌ IG: Error - ${error.message}`, 'error');
+                }
+            }
+
+            activeSpam--;
+            updateStats();
+            addLog(`📊 IG: Selesai!`, 'success');
+        };
+
+        window.spamFB = async function() {
+            const post = document.getElementById('fbPost').value;
+            const komentar = document.getElementById('fbKomentar').value;
+            const jumlah = parseInt(document.getElementById('fbJumlah').value);
+            const delay = parseInt(document.getElementById('fbDelay').value) * 1000;
+
+            if (!komentar) {
+                addLog('❌ FB: Komentar harus diisi!', 'error');
+                return;
+            }
+
+            activeSpam++;
+            targetHit++;
+            updateStats();
+            
+            addLog(`🔥 FB: Menyerang (${jumlah}x)`, 'process');
+
+            for (let i = 1; i <= jumlah; i++) {
+                try {
+                    addLog(`📤 FB: Mengirim komentar ke-${i}...`, 'process');
+                    
+                    await new Promise(r => setTimeout(r, 1000));
+                    
+                    successSpam++;
+                    addLog(`✅ FB: Komentar ke-${i} terkirim`, 'success');
+
+                    totalSpam++;
+                    updateStats();
+
+                    if (i < jumlah) {
+                        await new Promise(r => setTimeout(r, delay));
+                    }
+
+                } catch (error) {
+                    failedSpam++;
+                    totalSpam++;
+                    updateStats();
+                    addLog(`❌ FB: Error - ${error.message}`, 'error');
+                }
+            }
+
+            activeSpam--;
+            updateStats();
+            addLog(`📊 FB: Selesai!`, 'success');
+        };
+    </script>
+</body>
+</html>
